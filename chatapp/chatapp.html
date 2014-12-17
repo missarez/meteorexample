@@ -1,0 +1,43 @@
+<head>
+    <title>To DO list</title>
+</head>
+
+<body>
+	<h1> To Do List Example</h1>
+
+{{> loginButtons}}
+
+    <h2>Incomplete Tasks ({{incompleteCount}})</h2>
+
+<label class="hide-completed">
+  <input type="checkbox" checked="{{hideCompleted}}" />
+  Hide Completed Tasks
+</label>
+
+{{#if currentUser}}
+    <form class="new-task">
+        <input type="texton" name="texton" placeholder="Type to add new tasks" />
+
+    </form>
+{{/if}}
+    <ul>
+    	
+
+        {{#each tasks}} {{> taskTemplate}} {{/each}}
+    </ul>
+
+
+</body>
+
+
+
+<template name="taskTemplate">
+
+    <li class="{{#if checked}}checked{{/if}}"> <!-- if the value of the checked is true then add class checked-->
+        <button class="delete">&times;</button>
+
+        <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+ 
+        <span class="texton"><strong>{{username}}</strong> - {{textis}}</span>
+    </li>
+</template>
