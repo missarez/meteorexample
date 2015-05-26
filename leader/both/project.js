@@ -1,0 +1,1 @@
+myProject = new Mongo.Collection('theproject');

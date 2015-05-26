@@ -1,0 +1,1 @@
+TeamMember = new Mongo.Collection('teammember')

@@ -1,0 +1,12 @@
+<template name="teammember">
+	<select id="nameselect">
+ {{#each member}}
+ <option value="{{_id}}">{{name}} </option> 
+{{/each}} </select>
+
+<ul>
+ {{#each member}}
+	<li class="teammember">{{name}}</li>
+
+{{/each}}
+</ul></template>

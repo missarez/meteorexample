@@ -1,0 +1,10 @@
+/* CSS declarations go here */
+li {
+
+	cursor: pointer;
+	list-style: none;
+}
+
+.selected{
+background-color: yellow;
+}
