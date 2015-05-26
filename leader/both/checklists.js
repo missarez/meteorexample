@@ -1,0 +1,1 @@
+myChecklists = new Mongo.Collection('thelists');

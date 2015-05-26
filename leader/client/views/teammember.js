@@ -16,11 +16,13 @@ Template.teammember.events({
 	console.log(selectedMember)
 	},
 
-'change #nameselect': function(){
-	 var memberId = this._id;
-	console.log(memberId)
+'change .testing': function(){
+	 
+	console.log("just clicked")
 }
 })
+
+
 /******* EVENTS: CLICK, DBLCLICK, CHANGE, MOUSEOVER, FOCUS, BLUR
 'click li': function(){
 		console.log(this.name)
